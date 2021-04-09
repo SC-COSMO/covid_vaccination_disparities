@@ -2,7 +2,7 @@
 
 ## Caution: this work is preliminary and has not been certified by peer-review.
 
-This repository contains replication [data](https://github.com/SC-COSMO/covid_vaccination_disparities/tree/main/data) and [code](https://github.com/SC-COSMO/covid_vaccination_disparities/tree/main/code) for our [pre-print manuscript](https://github.com/SC-COSMO/covid_vaccination_disparities/blob/main/Vax-Disparities-Appendix.pdf).
+This repository contains replication [data](https://github.com/SC-COSMO/covid_vaccination_disparities/tree/main/data) and [code](https://github.com/SC-COSMO/covid_vaccination_disparities/tree/main/code) for our [pre-print manuscript](https://github.com/SC-COSMO/covid_vaccination_disparities/blob/main/Vax-Disparities-Paper.pdf).
 
 President Biden has announced that all adults aged 16 years and older will be eligible to receive a COVID-19 vaccine by April 19, 2021. Under this expanded eligibility, demand for vaccination will continue to outstrip supply over the coming weeks, and unequal vaccination rates across racial/ethnic groups may compound existing disparities in cases, hospitalizations, and deaths among Black, Indigenous, and Hispanic communities.
 
