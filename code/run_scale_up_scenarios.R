@@ -164,7 +164,7 @@ time_to_cap <- 7*6
 out <- NULL
 for (s in unique(sim_data$state_name)) {
   print(s)
-  supply <- 1.625*1000000
+  supply <- 1.68*1000000
   sim_data <- backup[state_name==s]
   counter <- 1
   for (i in as.list(seq.Date(as.Date("04/01/2021", format="%m/%d/%Y"),as.Date("7/01/2021", format="%m/%d/%Y"), "days"))) {
