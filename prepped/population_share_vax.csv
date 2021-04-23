@@ -47,7 +47,7 @@
 "Delaware","Black",0.180893326674482,33694.202020202
 "Delaware","Other",0.0112053951572827,2112.88888888889
 "Delaware","American Indian or Alaska Native",0.00355856439447063,661.646464646465
-"Delaware","Native Hawaiian or Other Pacific Islander",9.78149822952322e-05,19.2929292929293
+"Delaware","Native Hawaiian or Other Pacific Islander",0.0000978149822952322,19.2929292929293
 "District of Columbia","Black",0.469560303787798,73371.24734087
 "District of Columbia","Hispanic",0.0878551023046461,17357.84054235
 "District of Columbia","White",0.381133359726663,72230.552943266
@@ -152,7 +152,7 @@
 "Mississippi","Hispanic",0.0184547790954282,7719.00688815801
 "Mississippi","Other",0.00772491855750877,3228.18867773519
 "Mississippi","American Indian or Alaska Native",0.00327366450801505,1275.87454422987
-"Mississippi","Native Hawaiian or Other Pacific Islander",5.0126853248776e-05,20.2238470032238
+"Mississippi","Native Hawaiian or Other Pacific Islander",0.000050126853248776,20.2238470032238
 "Missouri","White",0.840229917238847,519706.426210088
 "Missouri","Black",0.0971863984219756,63694.5201835605
 "Missouri","Other",0.012621386468989,8634.35749193536
@@ -299,7 +299,7 @@
 "West Virginia","Hispanic",0.00873979754881257,1676.98853805
 "West Virginia","American Indian or Alaska Native",0.00167110017188391,371.255625678
 "West Virginia","Asian",0.00701162979049867,1468.58290369
-"West Virginia","Native Hawaiian or Other Pacific Islander",3.3730025983229e-05,8.5677639
+"West Virginia","Native Hawaiian or Other Pacific Islander",0.000033730025983229,8.5677639
 "Wisconsin","White",0.871501638782389,737019.713322339
 "Wisconsin","American Indian or Alaska Native",0.00595849222900194,4829.236481659
 "Wisconsin","Black",0.0467081836273099,36549.511536462

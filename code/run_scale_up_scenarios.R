@@ -4,6 +4,7 @@ library(data.table)
 library(ggplot2)
 library(DBI)
 library(RSQLite)
+library(tidyverse)
 
 regions <- fread("https://raw.githubusercontent.com/cphalpert/census-regions/master/us%20census%20bureau%20regions%20and%20divisions.csv")
 regions <- regions[, geo_id:=tolower(`State Code`)]
@@ -27,7 +28,6 @@ df <- df[county=="Petersburg Borough", county_code:="195"]
 df <- df[race_grp_full == "Multiracial", race_grp_full:="Other"]
 df <- df[race_grp_full == "Native Hawaiian or Pacific Islander", race_grp_full:="Native Hawaiian or Other Pacific Islander"]
 df <- df[race_grp_full=="Latino", race_grp_full:="Hispanic"]
-
 
 df <- df[, state_pop:=sum(estimate, na.rm=T), by = c("state_name", "race_grp_full")]
 setnames(df, "race_grp_full", "race_grp")
@@ -142,7 +142,7 @@ sim_data <- copy(df)
 ## Equalized Uptake
 ## Equalized Uptake and Geographic Targeting
 
-scenario_label <- "Equalized Uptake and Geographic Targeting"
+scenario_label <- "Status Quo"
 
 if (scenario_label == "Status Quo") {
   print(paste0("Running ", scenario_label))
@@ -181,7 +181,7 @@ for (s in unique(sim_data$state_name)) {
   supply <- vax_history$smooth[vax_history$state_name==s & vax_history$Date=="2021-04-01"]
   sim_data <- backup[state_name==s]
   counter <- 1
-  for (i in as.list(seq.Date(as.Date("04/01/2021", format="%m/%d/%Y"),as.Date("9/01/2021", format="%m/%d/%Y"), "days"))) {
+  for (i in as.list(seq.Date(as.Date("04/01/2021", format="%m/%d/%Y"),as.Date("10/01/2021", format="%m/%d/%Y"), "days"))) {
     sim_data <- sim_data[, daily_vax:=supply*geo_alloc*race_age_pct]
     sim_data <- sim_data[, vaccinated:=ifelse(vaccinated+daily_vax<=estimate*(.95), vaccinated+daily_vax, estimate*(.95))]
     temp <- copy(sim_data)
